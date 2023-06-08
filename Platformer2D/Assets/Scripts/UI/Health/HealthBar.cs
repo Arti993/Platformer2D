@@ -44,6 +44,7 @@ public class HealthBar : MonoBehaviour
     private void CreateHeart()
     {
         Heart newHeart = Instantiate(_heartTemplate, transform);
+
         _hearts.Add(newHeart.GetComponent<Heart>());
     }
 }

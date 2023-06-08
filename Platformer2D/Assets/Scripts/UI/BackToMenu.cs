@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using IJunior.TypedScenes;
 
-public class AuthorsMenu : MonoBehaviour
+public class BackToMenu : MonoBehaviour
 {
     public void GoToMainMenu()
     {

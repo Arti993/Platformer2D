@@ -53,6 +53,7 @@ public class LevelCompleteScreen : MonoBehaviour
         if(currentLevelSceneNumber == levelReached)
         {
             levelReached++;
+
             PlayerPrefs.SetInt("levelReached", levelReached);
         }
     }

@@ -13,6 +13,7 @@ public class MenuMusicController : MonoBehaviour
         else
         {
             instance = this;
+
             DontDestroyOnLoad(transform.gameObject);
         }
     }

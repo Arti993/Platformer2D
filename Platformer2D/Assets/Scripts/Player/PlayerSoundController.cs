@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSoundEffector : MonoBehaviour
+public class PlayerSoundController : MonoBehaviour
 {
     [SerializeField] public AudioSource JumpSound;
     [SerializeField] public AudioSource AttackSound;

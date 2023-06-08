@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
         int levelReached = PlayerPrefs.GetInt("levelReached");
 
         SceneManager.LoadScene(levelReached);
+
         Destroy(GameObject.Find("Audio Source"));
     }
 

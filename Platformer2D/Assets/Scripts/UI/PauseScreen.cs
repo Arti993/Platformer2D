@@ -28,16 +28,20 @@ public class PauseScreen : MonoBehaviour
     public void OpenPanel(GameObject panel)
     {
         _panel = panel;
-        _panel.SetActive(true);
-        _player.DisableControl();
         Time.timeScale = 0;
+
+        _panel.SetActive(true);
+
+        _player.DisableControl();
     }
 
     private void ClosePanel()
     {
-        _panel.SetActive(false);
-        _player.EnableControl();
         Time.timeScale = 1;
+
+        _panel.SetActive(false);
+
+        _player.EnableControl();
     }
 
     private void OnContinueButtonClick()
@@ -48,6 +52,7 @@ public class PauseScreen : MonoBehaviour
     private void OnMainMenuButtonClick()
     {
         ClosePanel();
+
         MainScreenMenu.Load();
     }
 }

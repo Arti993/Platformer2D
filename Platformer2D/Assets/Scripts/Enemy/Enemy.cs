@@ -42,14 +42,13 @@ public class Enemy : Entity
           
             if (player.IsAboveEnemyHead())
             {
-                GetDamage();
+                player.Attack();
 
-                player.JumpAfterAttack();
+                GetDamage();
             }
             else
                 player.GetDamage();
         }
-        
     }
 
     private void Move()

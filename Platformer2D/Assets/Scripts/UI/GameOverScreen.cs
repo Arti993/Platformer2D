@@ -33,25 +33,34 @@ public class GameOverScreen : MonoBehaviour
     private void OnDied()
     {
         _loseSound.Play();
+
         _panel.SetActive(true);
+
         _pauseButton.interactable = false;
-        _player.DisableControl();
         Time.timeScale = 0;
+
+        _player.DisableControl();
     }
 
     private void OnTryAgainButtonClick()
     {
         _panel.SetActive(false);
+
         Time.timeScale = 1;
+
         Scene currentLevelScene = SceneManager.GetActiveScene();
+
         int currentLevelBuildIndex = currentLevelScene.buildIndex;
+
         SceneManager.LoadScene(currentLevelBuildIndex);
     }
 
     private void OnMainMenuButtonClick()
     {
         _panel.SetActive(false);
+
         Time.timeScale = 1;
+
         MainScreenMenu.Load();
     }
 }

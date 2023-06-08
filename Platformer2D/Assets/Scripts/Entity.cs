@@ -21,13 +21,14 @@ public abstract class Entity : MonoBehaviour
         Color hurtColor = new Color(1f, 0.4f, 0.4f);
         Color normalColor = new Color(1f, 1f, 1f);
 
-        spriteRenderer.color = hurtColor;
-        yield return waitForSeconds;
-        spriteRenderer.color = normalColor;
-        yield return waitForSeconds;
-        spriteRenderer.color = hurtColor;
-        yield return waitForSeconds;
-        spriteRenderer.color = normalColor;
-        yield return waitForSeconds;
+        int cyclesCount = 2;
+
+        for (int i = 0; i < cyclesCount; i++)
+        {
+            spriteRenderer.color = hurtColor;
+            yield return waitForSeconds;
+            spriteRenderer.color = normalColor;
+            yield return waitForSeconds;
+        }
     }
 }

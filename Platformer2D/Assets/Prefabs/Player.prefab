@@ -97,6 +97,9 @@ GameObject:
   - component: {fileID: 5459775266869457439}
   - component: {fileID: 5459775266869457408}
   - component: {fileID: 5459775266869457410}
+  - component: {fileID: 3832458123291775014}
+  - component: {fileID: 2148232361642697728}
+  - component: {fileID: 7564834329348148223}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -153,8 +156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 290a054df7f6b1545b36a5a2a1fb9c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
-  _jumpforce: 6.5
   _health: 3
 --- !u!70 &5459775266869457408
 CapsuleCollider2D:
@@ -193,3 +194,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3832458123291775014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459775266869457434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8daa67cfe485174fb5837aa7e62bb96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpSound: {fileID: 0}
+  AttackSound: {fileID: 0}
+  GetDamageSound: {fileID: 0}
+  TakeCoinSound: {fileID: 0}
+--- !u!114 &2148232361642697728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459775266869457434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f82ddd3bb0d2149b507e39e6f3c1f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7564834329348148223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459775266869457434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d611530cce3f0fe46ba379d055bafb6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 3
+  _jumpforce: 6.5

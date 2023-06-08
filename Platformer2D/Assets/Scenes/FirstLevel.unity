@@ -18768,6 +18768,22 @@ PrefabInstance:
       propertyPath: GetDamageSound
       value: 
       objectReference: {fileID: 1605421384}
+    - target: {fileID: 3832458123291775014, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
+      propertyPath: JumpSound
+      value: 
+      objectReference: {fileID: 1605421387}
+    - target: {fileID: 3832458123291775014, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
+      propertyPath: AttackSound
+      value: 
+      objectReference: {fileID: 1605421386}
+    - target: {fileID: 3832458123291775014, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
+      propertyPath: TakeCoinSound
+      value: 
+      objectReference: {fileID: 1605421385}
+    - target: {fileID: 3832458123291775014, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
+      propertyPath: GetDamageSound
+      value: 
+      objectReference: {fileID: 1605421384}
     - target: {fileID: 5459775266727755233, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -18831,6 +18847,14 @@ PrefabInstance:
     - target: {fileID: 5459775266869457439, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
       propertyPath: _jumpSound
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564834329348148223, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1551797871}
+    - target: {fileID: 7564834329348148223, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
+      propertyPath: _moveSpeed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 476ca5c160fa51047b6c3a38f29ae58c, type: 3}
