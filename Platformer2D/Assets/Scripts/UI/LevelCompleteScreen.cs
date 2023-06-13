@@ -11,6 +11,7 @@ public class LevelCompleteScreen : MonoBehaviour
     [SerializeField] private Fireworks _fireworks;
     [SerializeField] private AudioSource _victorySound;
 
+    private const string LevelReached = "levelReached";
     private float _waitTimeToNextLevelStart = 4f;
 
     private void Start()
@@ -48,13 +49,13 @@ public class LevelCompleteScreen : MonoBehaviour
     {
         int currentLevelSceneNumber = SceneManager.GetActiveScene().buildIndex;
 
-        int levelReached = PlayerPrefs.GetInt("levelReached");
+        int levelReached = PlayerPrefs.GetInt(LevelReached);
 
         if(currentLevelSceneNumber == levelReached)
         {
             levelReached++;
 
-            PlayerPrefs.SetInt("levelReached", levelReached);
+            PlayerPrefs.SetInt(LevelReached, levelReached);
         }
     }
 

@@ -6,18 +6,20 @@ using IJunior.TypedScenes;
 
 public class MainMenu : MonoBehaviour
 {
+    private const string LevelReached = "levelReached";
+
     private void Start()
     {
-        PlayerPrefs.GetInt("levelReached", 1);
+        PlayerPrefs.GetInt(LevelReached, 1);
     }
 
     public void PlayCurrentLevel()
     {
-        int levelReached = PlayerPrefs.GetInt("levelReached");
+        int levelReached = PlayerPrefs.GetInt(LevelReached);
 
         SceneManager.LoadScene(levelReached);
 
-        Destroy(GameObject.Find("Audio Source"));
+        Destroy(MenuMusicController.Instance.gameObject);
     }
 
     public void OpenLevelsList()
@@ -27,7 +29,7 @@ public class MainMenu : MonoBehaviour
 
     public void RestartProgress()
     {
-        PlayerPrefs.SetInt("levelReached", 1);
+        PlayerPrefs.SetInt(LevelReached, 1);
 
         PlayCurrentLevel();
     }

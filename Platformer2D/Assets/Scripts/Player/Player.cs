@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(PlayerSoundController))]
+[RequireComponent(typeof(PlayerMotionController))]
 public class Player : Entity
 {
 

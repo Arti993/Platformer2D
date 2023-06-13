@@ -8,9 +8,11 @@ public class LevelSelector : MonoBehaviour
 {
     public Button[] Levels;
 
+    private const string LevelReached = "levelReached";
+
     private void Start()
     {
-        int levelReached = PlayerPrefs.GetInt("levelReached");
+        int levelReached = PlayerPrefs.GetInt(LevelReached);
 
         for (int i = 0; i < Levels.Length; i++)
         {
@@ -23,6 +25,6 @@ public class LevelSelector : MonoBehaviour
     {
         SceneManager.LoadScene(numberInBuild);
 
-        Destroy(GameObject.Find("Audio Source"));
+        Destroy(MenuMusicController.Instance.gameObject);
     }
 }

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class MenuMusicController : MonoBehaviour
 {
-    private static MenuMusicController instance;
+    public static MenuMusicController Instance;
 
     private void Awake()
     {
-        if(instance != null)
+        if(Instance != null)
             Destroy(gameObject);
         else
         {
-            instance = this;
+            Instance = this;
 
             DontDestroyOnLoad(transform.gameObject);
         }
